@@ -1,7 +1,10 @@
 def turn_count(board)
-  i = board.size
+  i = 0
   board.each do |element|
-    while i < 9 
+    if element != " "
+      i+=1
+    end
+    return i
 end
 
 def current_player
